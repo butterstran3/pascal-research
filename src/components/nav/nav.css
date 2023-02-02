@@ -38,25 +38,15 @@ a {
 }
 
 .modal_container {
-    width: 100vw;
-    height: 100vh;
-    background: var(--color-black);
-}
-
-.modal__container {
     display: flex;
     width: 100vw;
     height: 100vh;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
     background: var(--color-black);
     flex-direction: column;
 }
 
-.mobile-pages__container {
+.mobile-pages_container {
     background: var(--color-black);
     width: 100%;
     display: grid;
@@ -67,6 +57,8 @@ a {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    position: fixed;
+    z-index: 1;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
@@ -104,12 +96,9 @@ a {
         padding-left: 4%;
     }
 
-    .mobile-pages__container {
-        padding-top: 7vh;
-    }
-
-    .mobile-pages__container {
+    .mobile-pages_container {
         padding: 25vh 0;
+        position: fixed;
     }
 
     .modal-nav_content {

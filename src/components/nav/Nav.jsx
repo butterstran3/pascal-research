@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './nav.css';
 import { NavLink } from 'react-router-dom';
 import { IoLogoApple } from 'react-icons/io';
-import {AiOutlineMenu} from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 import {RxCross1} from 'react-icons/rx';
 
 const Nav = () => {
@@ -44,7 +44,7 @@ const Nav = () => {
     } else if (mobileActive && mobileNav) {
         return (
             <div className="container modal_container">
-                <header className="mobile-nav_container">
+                <nav className="mobile-nav_container">
                     <div className="empty_container"></div>
                     <div className="mobile-nav_contents">
                         <NavLink className="mobile-nav_content" to="/" end>
@@ -54,8 +54,8 @@ const Nav = () => {
                     <div className="btn_container">
                         <button className="modal_btn" onClick={() => setMobileNav(!mobileNav)}><RxCross1 /></button>
                     </div>
-                </header>
-                <div className='mobile-pages__container'>
+                </nav>
+                <div className='mobile-pages_container'>
                     <div className='mobile-about'>
                         <NavLink className="nav_content" to="/about">About</NavLink>
                     </div>
