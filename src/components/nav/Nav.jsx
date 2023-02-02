@@ -12,7 +12,7 @@ const Nav = () => {
 
     useEffect(() => {
         const checkIsPhone = () => {
-            if (window.innerWidth <= 1030) {
+            if (window.innerWidth <= 1024) {
                 setMobileActive(true);
             } else {
                 setMobileActive(false);

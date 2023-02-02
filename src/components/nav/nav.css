@@ -70,7 +70,7 @@ a {
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1024px) {
     .modal_btn {
         background: var(--color-black);
         color: var(--color-white);
