@@ -1,0 +1,132 @@
+.pricing_container {
+    display: flex;
+    width: 100%;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 3rem 4rem 5rem 4rem;
+}
+
+.pricing_options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+h1, h4 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.pricing_title h1 {
+    color: var(--color-variant);
+}
+
+.pricing_title {
+    padding: 3rem 0;
+}
+
+.pricing_item {
+    background: #202A44;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 3px solid transparent;
+    border-color: var(--color-primary);
+    transition: var(--transition);
+    line-height: 3rem;
+}
+
+.pricing_item:hover {
+    background: transparent;
+}
+
+.pricing_item ul, li {
+    padding: 1rem;
+}
+
+.pricing_item h2 {
+    color: var(--color-variant);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.pricing_item h3 {
+    color: #A5F1E9;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.sign-up-btn_container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+}
+
+.sign-up_btn {
+    width: 100%;
+    display: inline-block;
+    color: var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 3px solid var(--color-variant);
+    transition: var(--transition);
+    align-items: center;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.sign-up_btn:hover {
+    color: var(--color-black);
+    background: var(--color-variant);
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width);
+    }
+
+    .pricing_container {
+        padding: 3rem 5rem;
+    }
+
+    .pricing_options {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .pricing_item {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width);
+    }
+
+    .pricing_container {
+        padding: 1rem;
+    }
+
+    .pricing_options {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .pricing_item {
+        padding: 3rem;
+    }
+
+    .pricing_item ul, li {
+        padding: 0.3rem;
+    }
+
+    .sign-up-btn_container {
+        padding: 1rem 0;
+    }
+}
