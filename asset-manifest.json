@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/%7Bpascal-research%7D/static/css/main.68106dcd.css",
+    "main.js": "/%7Bpascal-research%7D/static/js/main.33e3eccb.js",
+    "static/media/stonks.png": "/%7Bpascal-research%7D/static/media/stonks.345bd00631cf04308223.png",
+    "index.html": "/%7Bpascal-research%7D/index.html",
+    "main.68106dcd.css.map": "/%7Bpascal-research%7D/static/css/main.68106dcd.css.map",
+    "main.33e3eccb.js.map": "/%7Bpascal-research%7D/static/js/main.33e3eccb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68106dcd.css",
+    "static/js/main.33e3eccb.js"
+  ]
+}
